@@ -144,27 +144,27 @@
 
 Instruction | Translation
 -|-
-AddR R1, R2 | R1 = R1 + R2
-AddR R2, 4 | R2 = R2 + 4
-SubR R2, 3 | R2 = R2 - 3
-SubR R2, R1 | R2 = R2 - R1
-MultR R1, R2 | R1 = R1 * R2
-MultR R2, 4 | R2 = R2 * 4
-DivR R1, 5 | R1 = R1 / 5
-DivR R2, R1 | R2 = R2 / R1
-MovR R1, 6 | R1 = 6
-MovR R1, R2 | R1 = R2
-AndR R1, R2 | R1 = R1 & R2
-AndR R2, 4 | R2 = R2 & 4
-ORR R1, R2 | R1 = R1 \| R2
-ORR R2, 5 | R2 = R2 \| 5
-Shl R1, 3 | R1 = R1 << 3
-Shl R2, R1 | R2 = R2 << R1
-J 6 | PC = 6
-St R1, 6 | M[6] = R1
-St R2, 4 | M[4] = R2
-Ld R2, 3 | R2 = M[3]
-Ld R1, 1 | R1 = M[1]
+```AddR``` R1, R2 | R1 = R1 + R2
+```AddR``` R2, 4 | R2 = R2 + 4
+```SubR``` R2, 3 | R2 = R2 - 3
+```SubR``` R2, R1 | R2 = R2 - R1
+```MultR``` R1, R2 | R1 = R1 * R2
+```MultR``` R2, 4 | R2 = R2 * 4
+```DivR``` R1, 5 | R1 = R1 / 5
+```DivR``` R2, R1 | R2 = R2 / R1
+```MovR``` R1, 6 | R1 = 6
+```MovR``` R1, R2 | R1 = R2
+```AndR``` R1, R2 | R1 = R1 & R2
+```AndR``` R2, 4 | R2 = R2 & 4
+```ORR``` R1, R2 | R1 = R1 \| R2
+```ORR``` R2, 5 | R2 = R2 \| 5
+```Shl``` R1, 3 | R1 = R1 << 3
+```Shl``` R2, R1 | R2 = R2 << R1
+```J``` 6 | PC = 6
+```St``` R1, 6 | M[6] = R1
+```St``` R2, 4 | M[4] = R2
+```Ld``` R2, 3 | R2 = M[3]
+```Ld``` R1, 1 | R1 = M[1]
 
 ---
 
