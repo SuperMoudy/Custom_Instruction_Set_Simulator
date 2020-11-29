@@ -34,17 +34,17 @@
 
     Instruction | Opcode | Examples
     -|-|-
-    ```AddR```  | 0000 | AddR R1, R2 or AddR R2, 3
-    ```SubR```  | 0001 | SubR R2, R1 or SubR R1, 4
-    ```MultR``` | 0010 | MultR R1, R2 or MultR R2, 2
-    ```DivR```  | 0011 | DivR R2, R1 or DivR R1, 5
-    ```MovR```	| 0100 | MovR R1, R2 or MovR R1, 3
-    ```AndR```	| 0101 | AndR R1, R2 or AndR R1, 4
-    ```ORR```   | 0110 | ORR R1, R2 or ORR R2, 6
-    ```Shl```   | 0111 | Shl R1, R2 or Shl R2, 1
-    ```J```     | 1000 | J 6
-    ```St```    | 1001 | St R1, 4
-    ```Ld```    | 1010 | Ld R2, 3
+    ```AddR```  | 0000 | ```AddR``` R1, R2 or ```AddR``` R2, 3
+    ```SubR```  | 0001 | ```SubR``` R2, R1 or ```SubR``` R1, 4
+    ```MultR``` | 0010 | ```MultR``` R1, R2 or ```MultR``` R2, 2
+    ```DivR```  | 0011 | ```DivR``` R2, R1 or ```DivR``` R1, 5
+    ```MovR```	| 0100 | ```MovR``` R1, R2 or ```MovR``` R1, 3
+    ```AndR```	| 0101 | ```AndR``` R1, R2 or ```AndR``` R1, 4
+    ```ORR```   | 0110 | ```ORR``` R1, R2 or ```ORR``` R2, 6
+    ```Shl```   | 0111 | ```Shl``` R1, R2 or ```Shl``` R2, 1
+    ```J```     | 1000 | ```J``` 6
+    ```St```    | 1001 | ```St``` R1, 4
+    ```Ld```    | 1010 | ```Ld``` R2, 3
     Reserved    | 1011 | -
     Reserved    | 1100 | -
     Reserved    | 1101 | -
