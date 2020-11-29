@@ -7,7 +7,7 @@
 - 10-bit instruction is divided into:
 
     Opcode | Destination Register | Select Bit | Source Operand
-    - | - | - | -
+    -|-|-|-
     4 bits | 2 bits | 1 bit | 3 bits
     
     ----
@@ -33,7 +33,7 @@
 - Opcode occupies 4 bits, so the instruction set can support up to 16 instructions (or operations).
 
     Instruction | Opcode | Examples
-    - | - | -
+    -|-|-
     AddR        | 0000 | AddR R1, R2 or AddR R2, 3
     SubR        | 0001 | SubR R2, R1 or SubR R1, 4
     MultR       | 0010 | MultR R1, R2 or MultR R2, 2
@@ -72,7 +72,7 @@
 - Since registers occupy 2 bits, there are only 4 registers in the register file 
 
     Register | Equivalent Machine Code (Address)
-    - | -
+    -|-
     RTL | 00
     R1  | 01
     R2  | 10
@@ -92,7 +92,7 @@
 - The select bit is used to choose the type of the source operand:
 
     Select Bit | Source Operand
-    - | -
+    -|-
     0 | Source register (2 bits) (either R0 or R1)
     1 | Immediate value (3 bits) (0-7)
 
@@ -123,7 +123,7 @@
 - There are opcodes that support both cases of source operand and others are not:
 
     Opcode | Source Register | Immediate Value
-    - | - | -
+    -|-|-
     AddR        | Supported | Supported
     SubR        | Supported | Supported
     MultR       | Supported | Supported
@@ -143,7 +143,7 @@
 ---
 
 Instruction | Translation
-- | -
+-|-
 AddR R1, R2 | R1 = R1 + R2
 AddR R2, 4 | R2 = R2 + 4
 SubR R2, 3 | R2 = R2 - 3
