@@ -15,7 +15,7 @@
 - Example: Adding R1 register to R2 and place the result in R1
     - In Assembly:
 
-    > AddR R1, R2
+    > ```AddR``` R1, R2
 
     - In Machine Code:
     
@@ -34,17 +34,17 @@
 
     Instruction | Opcode | Examples
     -|-|-
-    AddR        | 0000 | AddR R1, R2 or AddR R2, 3
-    SubR        | 0001 | SubR R2, R1 or SubR R1, 4
-    MultR       | 0010 | MultR R1, R2 or MultR R2, 2
-    DivR        | 0011 | DivR R2, R1 or DivR R1, 5
-    MovR	    | 0100 | MovR R1, R2 or MovR R1, 3
-    AndR	    | 0101 | AndR R1, R2 or AndR R1, 4
-    ORR		    | 0110 | ORR R1, R2 or ORR R2, 6
-    Shl         | 0111 | Shl R1, R2 or Shl R2, 1
-    J           | 1000 | J 6
-    St          | 1001 | St R1, 4
-    Ld          | 1010 | Ld R2, 3
+    ```AddR```  | 0000 | AddR R1, R2 or AddR R2, 3
+    ```SubR```  | 0001 | SubR R2, R1 or SubR R1, 4
+    ```MultR``` | 0010 | MultR R1, R2 or MultR R2, 2
+    ```DivR```  | 0011 | DivR R2, R1 or DivR R1, 5
+    ```MovR```	| 0100 | MovR R1, R2 or MovR R1, 3
+    ```AndR```	| 0101 | AndR R1, R2 or AndR R1, 4
+    ```ORR```   | 0110 | ORR R1, R2 or ORR R2, 6
+    ```Shl```   | 0111 | Shl R1, R2 or Shl R2, 1
+    ```J```     | 1000 | J 6
+    ```St```    | 1001 | St R1, 4
+    ```Ld```    | 1010 | Ld R2, 3
     Reserved    | 1011 | -
     Reserved    | 1100 | -
     Reserved    | 1101 | -
@@ -124,17 +124,17 @@
 
     Opcode | Source Register | Immediate Value
     -|-|-
-    AddR        | Supported | Supported
-    SubR        | Supported | Supported
-    MultR       | Supported | Supported
-    DivR        | Supported | Supported
-    MovR	    | Supported | Supported
-    AndR	    | Supported | Supported
-    ORR		    | Supported | Supported
-    Shl         | Supported | Supported
-    J           | Not Supported | Supported
-    St          | Not Supported | Supported
-    Ld          | Not Supported | Supported
+    ```AddR```      | Supported     | Supported
+    ```SubR```      | Supported     | Supported
+    ```MultR```     | Supported     | Supported
+    ```DivR```      | Supported     | Supported
+    ```MovR```	    | Supported     | Supported
+    ```AndR```	    | Supported     | Supported
+    ```ORR```		| Supported     | Supported
+    ```Shl```       | Supported     | Supported
+    ```J```         | Not Supported | Supported
+    ```St```        | Not Supported | Supported
+    ```Ld```        | Not Supported | Supported
 
 ---
 
@@ -144,27 +144,27 @@
 
 Instruction | Translation
 -|-
-```AddR``` R1, R2 | R1 = R1 + R2
-```AddR``` R2, 4 | R2 = R2 + 4
-```SubR``` R2, 3 | R2 = R2 - 3
-```SubR``` R2, R1 | R2 = R2 - R1
-```MultR``` R1, R2 | R1 = R1 * R2
-```MultR``` R2, 4 | R2 = R2 * 4
-```DivR``` R1, 5 | R1 = R1 / 5
-```DivR``` R2, R1 | R2 = R2 / R1
-```MovR``` R1, 6 | R1 = 6
-```MovR``` R1, R2 | R1 = R2
-```AndR``` R1, R2 | R1 = R1 & R2
-```AndR``` R2, 4 | R2 = R2 & 4
-```ORR``` R1, R2 | R1 = R1 \| R2
-```ORR``` R2, 5 | R2 = R2 \| 5
-```Shl``` R1, 3 | R1 = R1 << 3
-```Shl``` R2, R1 | R2 = R2 << R1
-```J``` 6 | PC = 6
-```St``` R1, 6 | M[6] = R1
-```St``` R2, 4 | M[4] = R2
-```Ld``` R2, 3 | R2 = M[3]
-```Ld``` R1, 1 | R1 = M[1]
+```AddR``` R1, R2   | R1 = R1 + R2
+```AddR``` R2, 4    | R2 = R2 + 4
+```SubR``` R2, 3    | R2 = R2 - 3
+```SubR``` R2, R1   | R2 = R2 - R1
+```MultR``` R1, R2  | R1 = R1 * R2
+```MultR``` R2, 4   | R2 = R2 * 4
+```DivR``` R1, 5    | R1 = R1 / 5
+```DivR``` R2, R1   | R2 = R2 / R1
+```MovR``` R1, 6    | R1 = 6
+```MovR``` R1, R2   | R1 = R2
+```AndR``` R1, R2   | R1 = R1 & R2
+```AndR``` R2, 4    | R2 = R2 & 4
+```ORR``` R1, R2    | R1 = R1 \| R2
+```ORR``` R2, 5     | R2 = R2 \| 5
+```Shl``` R1, 3     | R1 = R1 << 3
+```Shl``` R2, R1    | R2 = R2 << R1
+```J``` 6           | PC = 6
+```St``` R1, 6      | M[6] = R1
+```St``` R2, 4      | M[4] = R2
+```Ld``` R2, 3      | R2 = M[3]
+```Ld``` R1, 1      | R1 = M[1]
 
 ---
 
