@@ -2,8 +2,6 @@
 
 ## Typical Instruction Structure
 
----
-
 - 10-bit instruction is divided into:
 
     Opcode | Destination Register | Select Bit | Source Operand
@@ -27,8 +25,6 @@
 ---
     
 ## Opcode
-
----
 
 - Opcode occupies 4 bits, so the instruction set can support up to 16 instructions (or operations).
 
@@ -67,8 +63,6 @@
 
 ## Register file contents:
 
----
-
 - Since registers occupy 2 bits, there are only 4 registers in the register file 
 
     Register | Equivalent Machine Code (Address)
@@ -81,8 +75,6 @@
 ---
 
 ## Select Bit
-
----
 
 - The instruction set supports two types of instructions.
 
@@ -99,8 +91,6 @@
 ---
 
 ## Source Operand
-
----
 
 - It's a 3-bit code in the machine instruction
 
@@ -140,31 +130,29 @@
 
 ## Examples:
 
----
-
-Instruction | Translation
--|-
-```AddR``` R1, R2   | R1 = R1 + R2
-```AddR``` R2, 4    | R2 = R2 + 4
-```SubR``` R2, 3    | R2 = R2 - 3
-```SubR``` R2, R1   | R2 = R2 - R1
-```MultR``` R1, R2  | R1 = R1 * R2
-```MultR``` R2, 4   | R2 = R2 * 4
-```DivR``` R1, 5    | R1 = R1 / 5
-```DivR``` R2, R1   | R2 = R2 / R1
-```MovR``` R1, 6    | R1 = 6
-```MovR``` R1, R2   | R1 = R2
-```AndR``` R1, R2   | R1 = R1 & R2
-```AndR``` R2, 4    | R2 = R2 & 4
-```ORR``` R1, R2    | R1 = R1 \| R2
-```ORR``` R2, 5     | R2 = R2 \| 5
-```Shl``` R1, 3     | R1 = R1 << 3
-```Shl``` R2, R1    | R2 = R2 << R1
-```J``` 6           | PC = 6
-```St``` R1, 6      | M[6] = R1
-```St``` R2, 4      | M[4] = R2
-```Ld``` R2, 3      | R2 = M[3]
-```Ld``` R1, 1      | R1 = M[1]
+Instruction | Assembly Meaning | Machine Code | Machine Code Meaning
+-|-|-|-
+```AddR``` R1, R2   | R1 = R1 + R2  | 0000010100  | 0000 01 0 10X
+```AddR``` R2, 4    | R2 = R2 + 4   | 0000101100  | 0000 10 1 100
+```SubR``` R2, 3    | R2 = R2 - 3   | 0001101011  | 0001 10 1 011
+```SubR``` R2, R1   | R2 = R2 - R1  | 0001100011  | 0001 10 0 01X
+```MultR``` R1, R2  | R1 = R1 * R2  | 0010010100  | 0010 01 0 10X
+```MultR``` R2, 4   | R2 = R2 * 4   | 0010101100  | 0010 10 1 100
+```DivR``` R1, 5    | R1 = R1 / 5   | 0011011101  | 0011 01 1 101
+```DivR``` R2, R1   | R2 = R2 / R1  | 0011100010  | 0011 10 0 01X
+```MovR``` R1, 6    | R1 = 6        | 0100011110  | 0100 01 1 110
+```MovR``` R1, R2   | R1 = R2       | 0100010101  | 0100 01 0 10X
+```AndR``` R1, R2   | R1 = R1 & R2  | 0101010100  | 0101 01 0 10X
+```AndR``` R2, 4    | R2 = R2 & 4   | 0101101100  | 0101 10 1 100
+```ORR``` R1, R2    | R1 = R1 \| R2 | 0110010101  | 0110 01 0 10X
+```ORR``` R2, 5     | R2 = R2 \| 5  | 0110101101  | 0110 10 1 101
+```Shl``` R1, 3     | R1 = R1 << 3  | 0111011011  | 0111 01 1 011
+```Shl``` R2, R1    | R2 = R2 << R1 | 0111100010  | 0111 10 0 01X
+```J``` 6           | PC = 6        | 1000101110  | 1000 XX 1 110
+```St``` R1, 6      | M[6] = R1     | 1001011110  | 1001 01 1 110
+```St``` R2, 4      | M[4] = R2     | 1001101100  | 1001 10 1 100
+```Ld``` R2, 3      | R2 = M[3]     | 1010101011  | 1010 10 1 011
+```Ld``` R1, 1      | R1 = M[1]     | 1010011001  | 1010 01 1 001
 
 ---
 
